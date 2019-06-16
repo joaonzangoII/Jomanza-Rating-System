@@ -1,0 +1,54 @@
+{
+    "name": "jomanza/rating",
+    "description": "Laravel Eloquent Rating allows you to assign ratings to any model.",
+    "keywords": [
+        "eloquent",
+        "laravel",
+        "model",
+        "rating",
+        "rate",
+        "stars",
+        "star",
+        "system"
+    ],
+    "homepage": "https://github.com/joaonzango/rating",
+    "license": "MIT",
+    "authors": [{
+        "name": "Joao Nzango",
+        "email": "joaonzango@gmail.com",
+        "homepage": "https://twitter.com/joaonzango",
+        "role": "Developer"
+    }],
+    "require": {
+        "laravel/framework": "~5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2|^7.0",
+        "orchestra/testbench": "~3.5.0|~3.6.0",
+        "orchestra/database": "~3.5.0|~3.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jomanza\\Rating\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jomanza\\Rating\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jomanza\\Rating\\RatingServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
